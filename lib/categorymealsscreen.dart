@@ -1,15 +1,35 @@
 import 'package:flutter/material.dart';
-
+import 'package:meals_app/dummy_data.dart';
 class CategoryMealsScreen extends StatelessWidget {
-  const CategoryMealsScreen({Key? key}) : super(key: key);
+
+  final String categoryID;
+  final String categoryTitle;
+
+  CategoryMealsScreen (this.categoryID, this.categoryTitle);
+
 
   @override
   Widget build(BuildContext context) {
+    final categoryMeals=DUMMY_MEALS.where((meal){
+      return meal.categories.contains(categoryID);
+    }).toList();
+
+
+
     return Scaffold(
       appBar: AppBar(
-        title: Text("The Recipes"),
+        title: Text(categoryTitle),
       ),
-      body: Text(""),
+      body:
+      ListView.builder(itemBuilder: (ctx, index) {
+        return Text(categoryMeals[index].title);
+
+
+      },
+        itemCount: categoryMeals.length,
+
+     ),
+
     );
   }
 }
