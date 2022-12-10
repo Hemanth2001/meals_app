@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:meals_app/screens/filters_screen.dart';
 import 'package:meals_app/screens/tabs_screen.dart';
 
 class MainDrawer extends StatelessWidget {
@@ -35,7 +36,8 @@ class MainDrawer extends StatelessWidget {
                 ),
               ),
               onTap: (){
-
+                Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (_)
+                =>TabsScreen()));
               },
             ),
             ListTile(
@@ -49,7 +51,7 @@ class MainDrawer extends StatelessWidget {
               ),
               onTap: (){
                 Navigator.of(context).push(MaterialPageRoute(builder: (_)
-                =>TabsScreen()));
+                =>FilterScreen()));
 
               },
             ),
