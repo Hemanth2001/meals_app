@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:meals_app/screens/tabs_screen.dart';
 import './screens/categories.dart';
 
 void main() {
@@ -30,7 +31,7 @@ class MyApp extends StatelessWidget {
            fontWeight: FontWeight.bold
          )
      )),
-      home: CategoriesScreen(),
+      home:TabsScreen(),
     );
   }
 }//
