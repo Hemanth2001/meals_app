@@ -15,9 +15,9 @@ class MainDrawer extends StatelessWidget {
               color: Colors.amber,
               height: 120,
               width: double.infinity,
-              padding: EdgeInsets.all(20),
+              padding: const EdgeInsets.all(20),
               alignment: Alignment.topLeft,
-              child: Text(
+              child: const Text(
                 'Cooking Up',
                 style: TextStyle(
                   fontWeight: FontWeight.w900,
@@ -25,34 +25,35 @@ class MainDrawer extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(height: 20,),
+            const SizedBox(
+              height: 20,
+            ),
             ListTile(
-              leading: Icon(Icons.restaurant,size:26),
-              title: Text(
+              leading: const Icon(Icons.restaurant, size: 26),
+              title: const Text(
                 'Meals',
                 style: TextStyle(
                   fontSize: 24,
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              onTap: (){
-                Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (_)
-                =>TabsScreen()));
+              onTap: () {
+                Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(builder: (_) => const TabsScreen()));
               },
             ),
             ListTile(
-              leading: Icon(Icons.settings,size:26),
-              title: Text(
+              leading: const Icon(Icons.settings, size: 26),
+              title: const Text(
                 'Filter',
                 style: TextStyle(
                   fontSize: 24,
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              onTap: (){
-                Navigator.of(context).push(MaterialPageRoute(builder: (_)
-                =>FilterScreen()));
-
+              onTap: () {
+                Navigator.of(context)
+                    .push(MaterialPageRoute(builder: (_) => const FilterScreen()));
               },
             ),
           ],
