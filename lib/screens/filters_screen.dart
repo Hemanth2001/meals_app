@@ -14,6 +14,9 @@ class _FilterScreenState extends State<FilterScreen> {
   bool _vegan=false;
   bool _lactoseFree = false;
 
+
+
+  //some issue while passing the function
   Widget _buildSwitchListTile(
        String title,
       String description,
