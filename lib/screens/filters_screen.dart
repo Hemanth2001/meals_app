@@ -60,7 +60,6 @@ class _FilterScreenState extends State<FilterScreen> {
                       _glutenFree=newValue;
                     });
                   })
-
             ],
           ))
         ],
