@@ -7,6 +7,7 @@ class FilterScreen extends StatefulWidget {
   State<FilterScreen> createState() => _FilterScreenState();
 }
 
+
 class _FilterScreenState extends State<FilterScreen> {
 
   bool _glutenFree=false;
