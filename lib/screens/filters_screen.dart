@@ -30,11 +30,9 @@ class _FilterScreenState extends State<FilterScreen> {
         title: Text(title),
         value: currentValue,
         subtitle: Text(description),
-
         onChanged:updateValue(),
     );
         }
-
 
 
 
