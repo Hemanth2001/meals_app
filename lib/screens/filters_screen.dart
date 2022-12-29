@@ -9,6 +9,8 @@ class FilterScreen extends StatefulWidget {
 
 class _FilterScreenState extends State<FilterScreen> {
 
+
+
   bool _glutenFree = false;
   bool _vegertarian = false;
   bool _vegan = false;
